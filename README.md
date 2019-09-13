@@ -50,7 +50,7 @@ This data is converted to `json` format and inserted into the `producer_server.p
 
 - upon completing the `consumer.py` file, we run it and get the following output: 
 
-![Alt Text](files/images/consumer.png)
+![](images/consumer.png)
 
 
 - Next we complete the `data_stream.py` file, we start by creating a schema for our incoming data. From line 39 we can see how the spark job is configured. To get the required output; using the `window` function, we get a count of the distincted types of crimes in a 60 minuite interval and finally wirte the output. This section is completed by creating our spark in local mode. 
@@ -60,5 +60,5 @@ This data is converted to `json` format and inserted into the `producer_server.p
 
 ` spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.0 --master local[4] data_stream.py`
 
-![results](files/images/output.png)
+![](images/output.png)
 
